@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Text Image Converter</title>
+</head>
+<body>
+  <h1>Text Image Converter UTF-8</h1>
+  <div class="separate-div">
+    <h2>Text To Image</h2>
+    <textarea id="textarea" class="input-text"></textarea>
+    <button onclick="text_input()">Convert</button>
+    <label id="output_img_alt" style="display: block; margin: 12px 0"><b>Input text</b> and press <b>convert</b> to create image.<br>Megabytes of data may take a while.</label>
+    <img id="output_img" class="output-img" hidden>
+  </div>
+  <div class="separate-div" style="left: 50%">
+    <h2>Image To Text</h2>
+    <input type="file" class="input-file" accept=".png" onchange="image_input()">
+    <label id="output_text_alt" style="display: block; margin: 12px 0">Select <b>8-bit PNG File</b> and<br>Convert will start automatically.<br>This process may take some time.</label>
+    <textarea id="output_text" class="output-text" readonly></textarea>
+  </div>
+</body>
+</html>
